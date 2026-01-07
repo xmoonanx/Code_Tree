@@ -10,6 +10,6 @@ public class Main {
             if(i%2==0 || i%3==0 || i%5 ==0) continue;
             res++;
         }
-        // System.out.print(res);
+        System.out.print(res);
     }
 }
