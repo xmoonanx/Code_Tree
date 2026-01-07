@@ -17,8 +17,8 @@ public class Main {
         else{ //a<b
             if(B<C) res = B;
             else{ // B>C
-                if (A>C) res = C;
-                else res = A;
+                if (A>C) res = A;
+                else res = C;
             }
         }
         System.out.println(res);
