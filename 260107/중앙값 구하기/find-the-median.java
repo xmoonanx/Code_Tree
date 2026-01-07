@@ -14,6 +14,13 @@ public class Main {
                 else res = A;
             }            
         }
+        else{ //a<b
+            if(B<C) res = B;
+            else{ // B>C
+                if (A>C) res = C;
+                else res = A;
+            }
+        }
         System.out.println(res);
     }
 }
