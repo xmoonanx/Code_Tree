@@ -7,11 +7,12 @@ public class Main {
         double sum = 0;
         while(true){
             int n = sc.nextInt();
-            if(n>29) break;
-            else {
-
+            if(n<30){
                 sum += n;
                 i++;
+            } 
+            else {
+                break;
             }
         }
         System.out.printf("%.2f", sum/i);
