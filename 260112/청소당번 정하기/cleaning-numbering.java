@@ -9,7 +9,7 @@ public class Main {
         int road = 0;
         int bath = 0;
 
-        for(int i =0; i<n; i++){
+        for(int i =0; i<=n; i++){
             if(i==0) continue;
 
             if(i%12==0) bath++;
