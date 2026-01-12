@@ -8,8 +8,11 @@ public class Main {
         while(true){
             int n = sc.nextInt();
             if(n>29) break;
-            sum += n;
-            i++;
+            else {
+
+                sum += n;
+                i++;
+            }
         }
         System.out.printf("%.2f", sum/i);
     }
