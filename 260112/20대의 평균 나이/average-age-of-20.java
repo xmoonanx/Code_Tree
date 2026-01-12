@@ -14,7 +14,7 @@ public class Main {
             else {
                 break;
             }
-            int n = sc.nextInt();
+            n = sc.nextInt();
         }
         System.out.printf("%.2f", sum/i);
     }
