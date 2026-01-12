@@ -5,8 +5,8 @@ public class Main {
         Scanner sc = new Scanner(System.in);
         int i =0;
         double sum = 0;
+        int n = sc.nextInt();
         while(true){
-            int n = sc.nextInt();
             if(n<30){
                 sum += n;
                 i++;
@@ -14,6 +14,7 @@ public class Main {
             else {
                 break;
             }
+            int n = sc.nextInt();
         }
         System.out.printf("%.2f", sum/i);
     }
