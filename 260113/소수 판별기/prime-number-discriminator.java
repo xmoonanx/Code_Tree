@@ -6,7 +6,7 @@ public class Main {
         int n = sc.nextInt();
         char res = 'C';
         for(int i =2; i<n; i++){
-            if(n%i==0) break;
+            if(n%i==0) {res = 'C'; break;}
             else res = 'P';
         }
         System.out.print(res);
