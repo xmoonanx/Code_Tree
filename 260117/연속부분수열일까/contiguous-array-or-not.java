@@ -17,6 +17,12 @@ public class Main {
             arrB[i] = sc.nextInt();
         }
         String res = "";
+        if(n2==1) {
+            for(int j = 0; j<n1; j++){
+                if(arrA[j] == arrB[0]) res = "Yes";
+                else res = "No";
+            }
+        }
         for(int i =1; i<n2; i++){
             for(int j =1; j<n1; j++){
                 if((arrA[j-1] == arrB[i-1])&&(arrA[j] == arrB[i])){
