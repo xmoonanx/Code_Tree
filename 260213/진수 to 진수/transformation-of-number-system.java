@@ -23,7 +23,7 @@ public class Main {
     }
 
     public static void tenTo(int B, int tenNum){
-        int[] arr = new int[10];
+        int[] arr = new int[20];
         int cnt = 0;
         while(true){
             if(tenNum<B){
