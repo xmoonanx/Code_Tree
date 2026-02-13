@@ -10,27 +10,14 @@ public class Main {
         String N = br.readLine();
         // Please write your code here.
 
-        int tep = Integer.parseInt(N);
-
-        int tenNum = toTen(A, tep);
+        int tenNum = toTen(A, N);
         tenTo(B, tenNum);
     }
 
-    public static int toTen(int A, int tep){
-        int[] arr = new int[10];
-        int cnt = 0;
-        while(true){
-            if(tep<A){
-                arr[cnt++] = tep%10;
-                break;
-            }
-
-            arr[cnt++] = tep%10;
-            tep/=10;
-        }
+    public static int toTen(int A, String n){
         int res = 0;
-        for(int i = 0; i<cnt; i++){
-            res = res * A + arr[i];
+        for(int i = 0; i<n.length(); i++){
+            res = res * A + (n.charAt(i) - '0');
         }
         return res;
     }
