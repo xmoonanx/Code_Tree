@@ -12,7 +12,7 @@ public class Main {
             StringTokenizer st = new StringTokenizer(br.readLine());
             x1[i] = Integer.parseInt(st.nextToken()) + 100;
             x2[i] = Integer.parseInt(st.nextToken()) + 100;
-            for(int j = x1[i]; j<=x2[i]; j++){
+            for(int j = x1[i]; j<x2[i]; j++){
                 arr[j] +=1;
             }
         }
