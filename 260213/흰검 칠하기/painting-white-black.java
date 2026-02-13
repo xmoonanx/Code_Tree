@@ -35,7 +35,8 @@ public class Main {
                 visited[i]++;
                 tile[i] = 1;
             }
-            idx += x-1;
+            if(x>1)
+                idx += x-1;
         }
 
         else { // d=='L'
@@ -43,7 +44,8 @@ public class Main {
                 visited[i]++;
                 tile[i] =2;
             }
-            idx -= x-1;
+            if(x>1)
+                idx -= x-1;
         }
     }
 }
