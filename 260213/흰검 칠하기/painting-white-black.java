@@ -39,7 +39,7 @@ public class Main {
         }
 
         else { // d=='L'
-            for(int i = idx-x+1; i<=idx; i++){
+            for(int i = idx; i>idx-x; i--){
                 visited[i]++;
                 tile[i] =2;
             }
