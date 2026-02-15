@@ -18,9 +18,9 @@ public class Main {
         
         int bColor=0, wColor=0, gColor=0;
         for(int i = 0; i<tile.length; i++){
-                if(blackCount[i] + whiteCount[i] >= 4){
+                if(blackCount[i] >= 2 && whiteCount[i] >= 2){
                     gColor++;
-                }else{ // visited <4
+                }else{
                     if(tile[i] == 1){ //tile == 1 - black
                         bColor++;
                     }else if(tile[i] == 2){ // tile == 2 - white
