@@ -1,20 +1,22 @@
-import java.util.Scanner;
+import java.util.*;
+import java.io.*;
 public class Main {
     public static final int OFFSET = 100;
     public static final int MAX_R = 200;
     public static final int[][] checkArr = new int[MAX_R][MAX_R];
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
+    public static void main(String[] args) throws IOException {
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        int n = Integer.parseInt(br.readLine());
         int[] x1 = new int[n];
         int[] y1 = new int[n];
         int[] x2 = new int[n];
         int[] y2 = new int[n];
         for (int i = 0; i < n; i++) {
-            x1[i] = sc.nextInt() + OFFSET;
-            y1[i] = sc.nextInt()+ OFFSET;
-            x2[i] = sc.nextInt()+ OFFSET;
-            y2[i] = sc.nextInt()+ OFFSET;
+            StringTokenizer st = new StringTokenizer(br.readLine());
+            x1[i] = Integer.parseInt(st.nextToken()) + OFFSET;
+            y1[i] = Integer.parseInt(st.nextToken())+ OFFSET;
+            x2[i] = Integer.parseInt(st.nextToken())+ OFFSET;
+            y2[i] = Integer.parseInt(st.nextToken())+ OFFSET;
         }
         // Please write your code here.
         int res = 0;
