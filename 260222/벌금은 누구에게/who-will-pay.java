@@ -12,7 +12,7 @@ public class Main {
         }
         // Please write your code here.
         int[] student = new int[100];
-        int res = 0;
+        int res = -1;
         for(int i =0; i<m; i++){
             int cnt = penalizedPerson[i];
             student[cnt]++;
