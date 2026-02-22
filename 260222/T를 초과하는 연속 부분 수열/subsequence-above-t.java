@@ -13,7 +13,7 @@ public class Main {
         int max=0, cnt=0;
 
         for(int i =0; i<n; i++){
-            if(i >=1 && arr[i] > 3 && arr[i-1] >3) cnt++;
+            if(i >=1 && arr[i] > t && arr[i-1] >t) cnt++;
             else cnt = 1;
 
             max = Math.max(max, cnt);
