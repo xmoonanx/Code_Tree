@@ -19,7 +19,7 @@ public class Main {
             int dist = 0;
             int pre = 0;
             for(int j = 1; j<n; j++){
-                if(i==j) continue;
+                if(j==i) continue;
                 dist += Math.abs(x[pre] - x[j]) + Math.abs(y[pre] - y[j]);
                 pre = j;
             }
