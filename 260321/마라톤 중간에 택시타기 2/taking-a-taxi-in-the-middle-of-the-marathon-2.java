@@ -14,7 +14,7 @@ public class Main {
             y[i] = sc.nextInt();
         }
 
-        int ans = MAX_N;
+        int ans = INT_MAX;
         for(int i =1; i<n-1; i++){
             int dist = 0;
             int pre = 0;
